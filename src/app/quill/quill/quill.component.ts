@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-quill',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuillComponent implements OnInit {
 
+  editorForm: FormGroup;
   constructor() { }
 
   ngOnInit() {
+    this.editorForm = new FormGroup({
+      'editor': new FormControl(null)
+    })
   }
 
 }
