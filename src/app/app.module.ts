@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FileComponent } from './file_upload/component/file/file.component';
 import { FileService } from './file_upload/service/file.service';
+import { QuilllModule } from './quill/quilll.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FileService } from './file_upload/service/file.service';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    QuilllModule,
   ],
   providers: [FileService],
   bootstrap: [AppComponent]
